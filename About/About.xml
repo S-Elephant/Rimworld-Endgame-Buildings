@@ -1,0 +1,53 @@
+<ModMetaData>
+	<name>Endgame Buildings</name>
+	<author>Squirting Elephant</author>
+	<supportedVersions>
+		<li>1.1</li>
+		<li>1.2</li>
+	</supportedVersions>
+	<packageId>SquirtingElephant.EndgameBuildings</packageId>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>dismarzero.VGP.VGPVegetableGarden</li>
+	</loadAfter>
+	<description>Adds more buildings for endgame content.
+
+
+Technical Info
+Mod is mainly XML (C# only used for its own mod-settings) and overwrites nothing. Contains some XPath operations, very compatible.
+Performance impact: The same as other comparable buildings.
+Can safely be added to an existing game.
+Before removing this mod from an existing game, please make sure that you destroyed all structures from this mod first, stop any research in progress from this mod and that you are not ordering the creation of new structures from this mod.
+If you have have problems with researches overlapping each other (due to having many mods) please use a research mod like this one for example.
+100% Compatible with Misc Robots++ but you might want to prohibit them from using the PCs.
+Translation ready.
+
+New buildings:
+A Hi-Tech Kitchen capable of creating Lavish Meals from basic ingredients (no more need for meat), lunchboxes and can improve hay. Note: you will need some serious crop production before switching to the extended lavish meals since it requires a lot of ingredients and can quickly deplete your raw food reserves.
+Educational computers for safely learning skills.
+A tool cabinet that increase workspeed by 12% (and with more range) that stacks up to two times + the regular tool cabinets for a total of 12+12+6+6 = +36% workspeed.
+An advanced Vitals Monitor.
+A smaller reinstallable version of the ground penetrating scanner.
+An expensive lategame fusion reactor that generates 25.000 power. No more spamming of Ship Reactors!
+Armored shelves. I always hate it when droppods drop into my storage area and all of my shelves get blown up...
+Commode (=improved dresser).
+Hi-tech firefoam popper (has a large customisable explosion radius).
+
+New Items:
+Improved Hay (created by the Hi-Tech Kitchen).
+Lunchbox Meal (Lavish) meant for traveling.
+Lunchbox Casing (required by Lunchbox meal, created at smithy).
+
+Incompatibilities
+Load this mod AFTER "More Toolboxes" mod if you have it and it will be fine. It is not my mod causing the incompatibility btw.
+Do NOT run this mod simultaneously with my other mod Hi-tech Kitchen (this mod already includes it).
+
+Mods that go well with this mod (but not required):
+Misc Robots ++
+Planetary Drill
+Ogre Stack or Stack XXL (chose one)
+
+I try my best to balance it out, if something feels unbalanced please let me know. Most stuff is gated behind a lot of research, is rather expensive to build and thus is only available in endgame. Also I still need better graphics but I have no graphics skills :(</description>
+
+</ModMetaData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  
+  <!-- Education -->
+  <DoBillsEducateAnimals.label>educates about animals</DoBillsEducateAnimals.label>
+  <DoBillsEducateArtistic.label>educates Artistic</DoBillsEducateArtistic.label>
+  <DoBillsEducateConstruction.label>educates about Construction</DoBillsEducateConstruction.label>
+  <DoBillsEducateCooking.label>educates Cooking</DoBillsEducateCooking.label>
+  <DoBillsEducateCrafting.label>educates Crafting</DoBillsEducateCrafting.label>
+  <DoBillsEducateGrowing.label>educates about Growing</DoBillsEducateGrowing.label>
+  <DoBillsEducateMedicine.label>educates about Medicine</DoBillsEducateMedicine.label>
+  <DoBillsEducateMining.label>educates Mining</DoBillsEducateMining.label>
+  <DoBillsEducateIntellectual.label>educates about science</DoBillsEducateIntellectual.label>
+  <DoBillsEducateSocial.label>educates Social</DoBillsEducateSocial.label>
+  
+</LanguageData>

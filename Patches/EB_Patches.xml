@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ================================ Vitals Monitor MKII ================================ -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="HospitalBed"]/comps/li[@Class='CompProperties_AffectedByFacilities']/linkableFacilities</xpath>
+			<value>
+				<li>VitalsMonitorMKII</li>
+			</value>
+	</Operation>
+
+<!-- ================================ Hi-tech Kitchen ================================ -->
+
+	<!-- Ensures that this workbench is used as work. -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>HiTechKitchen</li>
+		</value>
+	</Operation>
+
+<!-- ================================ Hookup the Electric Stove to Tool Cabinets ================================ -->
+	
+	<!-- Check for linkableFacilities and if none found, add one. -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName="ElectricStove"]/comps/li/linkableFacilities</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="ElectricStove"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_AffectedByFacilities">
+						<linkableFacilities>
+							<li>ToolCabinet</li>
+						</linkableFacilities>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+<!-- ================================ Tool Cabinet ================================ -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef/comps/li[@Class='CompProperties_AffectedByFacilities']/linkableFacilities[li = 'ToolCabinet']</xpath>
+			<value>
+				<li>SE_ToolCabinetMKII</li>
+			</value>
+	</Operation>
+	
+<!-- ================================ Commode ================================ -->
+	
+	<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/ThingDef/comps/li[@Class='CompProperties_AffectedByFacilities']/linkableFacilities[li = 'Dresser']</xpath>
+			<value>
+				<li>SE_Commode</li>
+			</value>
+	</Operation>
+
+<!-- ================================ End ================================ -->
+
+</Patch>
