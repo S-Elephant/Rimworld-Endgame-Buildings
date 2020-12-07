@@ -78,6 +78,7 @@
     <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>HitechResearch</li>
+	  <li>Firefoam</li>
     </prerequisites>
 	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
