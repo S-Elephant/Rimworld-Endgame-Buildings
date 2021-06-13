@@ -13,10 +13,10 @@
 				<li>BulkBrewCoffee</li>
 				<li>BrewTea</li>
 				<li>BulkBrewTea</li>
-				<li>CookBulkMealSurvival</li>
 				<li>Stirfrymeal</li>
                 <li>Cookstewpot</li>
-				<li>VG_MakebulkPemmican</li>
+				<li>Make_Hardtack</li>
+				<li>Make_HardtackBulk</li>
             </value>
         </match>
     </Operation>
