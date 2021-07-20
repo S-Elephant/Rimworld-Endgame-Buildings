@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>LunchboxCasing</defName>
+    <label>lunchbox Casing</label>
+    <description>A lunchbox casing used for stuffing with lavish meals at the Hi-Tech Kitchen.</description>
+    <graphicData>
+      <texPath>LunchboxCasing</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <ingestible>
+	  <foodType>Tree</foodType> <!-- It must be a foodtype for it to show up at the hi-tech kitchen but it cannot be a regular foottype otherwise colonists and/or animals may attempt to eat it. So I went with "Tree". -->
+      <preferability>NeverForNutrition</preferability>
+	  <tasteThought>AteLunchboxCasing</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+    </ingestible>
+    <stackLimit>200</stackLimit>
+    <statBases>
+      <WorkToMake>200</WorkToMake>
+	  <Nutrition>1.0</Nutrition>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>2</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0</Flammability>
+	</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+	<costList>
+      <Steel>2</Steel>
+    </costList>
+	<recipeMaker>
+	  <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+	  <researchPrerequisite>hitech_kitchen_research</researchPrerequisite>
+    </recipeMaker>
+	<tradeability>None</tradeability>
+  </ThingDef>
+  
+</Defs>

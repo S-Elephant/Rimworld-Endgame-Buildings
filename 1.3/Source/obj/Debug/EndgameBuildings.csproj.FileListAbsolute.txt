@@ -1,0 +1,3 @@
+D:\Steam\steamapps\common\RimWorld\Mods\EndgameBuildings\Source\obj\Debug\EndgameBuildings.csprojAssemblyReference.cache
+D:\Steam\steamapps\common\RimWorld\Mods\EndgameBuildings\Assemblies\EndgameBuildings.dll
+D:\Steam\steamapps\common\RimWorld\Mods\EndgameBuildings\Source\obj\Debug\EndgameBuildings.dll

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ================================ Tool Cabinet MKII ================================ -->
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>SE_ToolCabinetMKII</defName>
+		<label>tool cabinet MKII</label>
+		<description>Increases work speed by 12% when placed near a workbench. One workbench use to up to two tool cabinets and up to two "tool cabinet MKII".</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/ToolCabinet</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<color>(96,102,204)</color>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>60</pathCost>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>3600</WorkToBuild>
+			<Mass>40</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<costList>
+			<Steel>800</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>HitechWorkbenches</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.12</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>2</maxSimultaneous>
+				<maxDistance>16</maxDistance>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+
+<!-- ================================ Vitals Monitor MKII ================================ -->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>VitalsMonitorMKII</defName>
+		<label>vitals monitor MKII</label>
+		<description>Increases medical tend quality, surgery success chance, and immunity gain speed when placed directly adjacent to a hospital bed. Only works for hospital beds - normal beds will not benefit. Attaching more than one vitals monitor MKII to the same bed will have no effect. Has 2x the tend quality, 3x the immunity gain speed factor and 2x the surgery success chance compared to a regular vitals monitor but drains 3x as much power.</description>
+		<graphicData>
+			<texPath>VitalsMonitorMKII/VitalsMonitorMKII</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.30, 0.40)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0.078125,0.46875,0.859375,0.53125)</rectN>
+				<rectS>(0.078125,0.46875,0.859375,0.53125)</rectS>
+				<rectE>(0.125,0.46875,0.625,0.296875)</rectE>
+				<rectW>(0.25,0.46875,0.625,0.296875)</rectW>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<researchPrerequisites>
+			<li>HitechVitalsMonitor</li>
+		</researchPrerequisites>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.2</fillPercent>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>6000</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>150</Steel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<designationCategory>Misc</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>240</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<MedicalTendQualityOffset>0.14</MedicalTendQualityOffset>
+					<ImmunityGainSpeedFactor>0.06</ImmunityGainSpeedFactor>
+					<SurgerySuccessChanceFactor>0.1</SurgerySuccessChanceFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<uiIconPath>VitalsMonitorMKII/VitalsMonitorMKII_MenuIcon</uiIconPath>
+		<uiIconScale>0.85</uiIconScale>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+  
+<!-- ================================ Mini Ground-Penetrating Scanner ================================ -->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>MiniGroundPenetratingScanner</defName>
+		<label>mini ground-penetrating scanner</label>
+		<description>A downward-facing penetrating radar, combined with sonar and magnetic imagers, allows you to detect (but not identify) minerals buried deep under the surface. Requires a huge amount of electricity. Is only 1/4th the size compared to the regular ground-penetrating scanner and has 1/4th of the beauty penalty and power consumption. Reinstallable.</description>
+		<graphicData>
+			<texPath>GroundPenetratingScanner/GroundPenetratingScanner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(1.35, 0.3, 1.7)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<costList>
+			<Steel>200</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable"/>
+			<li>
+				<compClass>CompDeepScanner</compClass>
+			</li>
+		</comps>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>12000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Beauty>-2</Beauty>
+			<Mass>18</Mass>
+		</statBases>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Misc</designationCategory>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<fillPercent>0.10</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<pathCost>25</pathCost>
+		<rotatable>false</rotatable>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<researchPrerequisites>
+			<li>HitechMiscellaneous</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<uiIconPath>GroundPenetratingScanner/GroundPenetratingScanner_MenuIcon</uiIconPath>
+		<uiIconScale>0.85</uiIconScale>
+		<tradeability>None</tradeability>
+	</ThingDef>
+	
+	<!-- ================================ End ================================ -->
+	
+	<ThingDef ParentName="BuildingBase">
+	   <defName>FirefoamPopperMKII</defName>
+	   <label>hi-tech firefoam popper</label>
+	   <description>When it detects fire, this safety device pops and sprays a fire-retardant foam in a circular field around itself. Can also be triggered manually. Has a bigger radius than the regular Firefoam popper (from 9.9 --> 24.9).</description>
+	   <graphicData>
+		  <texPath>FirefoamPopperMKII/FirefoamPopperMKII</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shadowData>
+			 <volume>(0.25, 0.35, 0.25)</volume>
+			 <offset>(0,0,-0.1)</offset>
+		  </shadowData>
+		  <damageData>
+			 <rect>(0.2,0.2,0.6,0.6)</rect>
+		  </damageData>
+	   </graphicData>
+	   <comps>
+		<li Class="CompProperties_Explosive">
+		<explosiveRadius>24.9</explosiveRadius>
+		<explosiveDamageType>Extinguish</explosiveDamageType>
+		<startWickHitPointsPercent>-1</startWickHitPointsPercent>
+		<startWickOnDamageTaken>
+		  <li>Flame</li>
+		</startWickOnDamageTaken>
+		<postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+		<postExplosionSpawnChance>1</postExplosionSpawnChance>
+		<postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+		<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		<explosionEffect>ExtinguisherExplosion</explosionEffect>
+		</li>
+		  <li Class="CompProperties_Usable">
+			 <useJob>TriggerFirefoamPopper</useJob>
+			 <useLabel>Trigger firefoam popper</useLabel>
+		  </li>
+		  <li Class="CompProperties_UseEffect">
+			 <compClass>CompUseEffect_StartWick</compClass>
+		  </li>
+		  <li Class="CompProperties_ProximityFuse">
+			 <target>Fire</target>
+			 <radius>3</radius>
+		  </li>
+	   </comps>
+	   <tickerType>Normal</tickerType>
+	   <altitudeLayer>Building</altitudeLayer>
+	   <minifiedDef>MinifiedThing</minifiedDef>
+	   <thingCategories>
+		  <li>BuildingsMisc</li>
+	   </thingCategories>
+	   <statBases>
+		  <MaxHitPoints>150</MaxHitPoints>
+		  <WorkToBuild>3000</WorkToBuild>
+		  <Mass>20</Mass>
+		  <Flammability>1.0</Flammability>
+		  <Beauty>-8</Beauty>
+	   </statBases>
+	   <fillPercent>0.30</fillPercent>
+	   <costList>
+		  <Steel>250</Steel>
+		  <ComponentIndustrial>3</ComponentIndustrial>
+	   </costList>
+	   <specialDisplayRadius>24.9</specialDisplayRadius>
+	   <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+	   <pathCost>25</pathCost>
+	   <designationCategory>Misc</designationCategory>
+	   <rotatable>false</rotatable>
+	   <researchPrerequisites>
+		  <li>Firefoam</li>
+		  <li>HitechMiscellaneous</li>
+	   </researchPrerequisites>
+	   <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef>
+	
+<!-- ================================ End ================================ -->
+  
+</Defs>

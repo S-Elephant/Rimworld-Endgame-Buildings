@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>AteLavishLunchboxMeal</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate lavish lunchbox meal</label>
+        <description>That lavish lunchbox meal was amazing. It nourished my body and my soul.</description>
+        <baseMoodEffect>13</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>AteLunchboxCasing</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate whole lavish lunchbox casing</label>
+        <description>That lavish lunchbox casing is not meant for eating... WHY did I eat it?</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>

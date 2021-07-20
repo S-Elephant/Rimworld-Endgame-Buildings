@@ -1,0 +1,13 @@
+D:\Steam\steamapps\common\RimWorld\Mods\EndgameBuildings\Source\bin\Release\EndgameBuildings.dll
+D:\Steam\steamapps\common\RimWorld\Mods\EndgameBuildings\Source\bin\Release\EndgameBuildings.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\EndgameBuildings\Source\obj\Release\EndgameBuildings.csprojAssemblyReference.cache
+D:\Steam\steamapps\common\RimWorld\Mods\EndgameBuildings\Source\obj\Release\EndgameBuildings.dll
+D:\Steam\steamapps\common\RimWorld\Mods\EndgameBuildings\Source\obj\Release\EndgameBuildings.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\EndgameBuildings\Assemblies\EndgameBuildings.dll
+D:\Steam\steamapps\common\RimWorld\Mods\EndgameBuildings\Assemblies\EndgameBuildings.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\EndgameBuildings\Source\obj\Release\EndgameBuildings.csproj.CopyComplete
+E:\VS_Projects\Rimworld\Rimworld-Endgame-Buildings\Assemblies\EndgameBuildings.dll
+E:\VS_Projects\Rimworld\Rimworld-Endgame-Buildings\Source\obj\Release\EndgameBuildings.csprojAssemblyReference.cache
+E:\VS_Projects\Rimworld\Rimworld-Endgame-Buildings\Source\obj\Release\EndgameBuildings.csproj.CoreCompileInputs.cache
+E:\VS_Projects\Rimworld\Rimworld-Endgame-Buildings\Source\obj\Release\EndgameBuildings.csproj.CopyComplete
+E:\VS_Projects\Rimworld\Rimworld-Endgame-Buildings\Source\obj\Release\EndgameBuildings.dll

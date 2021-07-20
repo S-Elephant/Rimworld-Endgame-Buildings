@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--============================== Armored Shelf ==============================-->
+	
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>ArmoredShelf</defName>
+		<label>armored shelf</label>
+		<description>An armored shelf for storing miscellaneous items. Items stored in this will not deteriorate, even if outside.</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Shelf</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>0.7</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Weapons</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>HitechMiscellaneous</li>
+		</researchPrerequisites>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+	
+	<!--============================== Dresser (Commode) ==============================-->
+	
+	<ThingDef ParentName="ArtableFurnitureBase">
+		<defName>SE_Commode</defName>
+		<label>commode</label>
+		<description>An improved dresser. Gives a comfort bonus to all nearby beds. Placing more than one commode near the same bed has no effect. Compared to a regular dresser: comfort bonus 0.05-->0.20, Distance 6-->10 and beauty 5-->8.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Dresser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>60</pathCost>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<costStuffCount>150</costStuffCount>
+		<statBases>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Mass>20</Mass>
+			<WorkToBuild>3500</WorkToBuild>
+			<Flammability>2.0</Flammability>
+			<Beauty>8</Beauty>
+		</statBases>
+		<size>(2,1)</size>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>HitechMiscellaneous</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.2</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>10</maxDistance>
+			</li>
+		</comps>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+</Defs>

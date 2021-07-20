@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HitechResearch.label>hi-tech research</HitechResearch.label>
+  <HitechResearch.description>Enables the research of hi-tech techs.</HitechResearch.description>
+
+  <hitech_kitchen_research.label>hi-Tech Kitchen</hitech_kitchen_research.label>
+  <hitech_kitchen_research.description>Cook lavish meals from basic raw food and improves hay.</hitech_kitchen_research.description>
+
+  <HitechWorkbenches.label>hi-Tech Workbenches</HitechWorkbenches.label>
+  <HitechWorkbenches.description>Enables the construction of hi-tech workbenches.</HitechWorkbenches.description>
+
+  <HitechVitalsMonitor.label>hi-Tech Vitals Monitor</HitechVitalsMonitor.label>
+  <HitechVitalsMonitor.description>Enables the construction of better vital monitors.</HitechVitalsMonitor.description>
+
+  <HitechMiscellaneous.label>miscellaneous hi-techs</HitechMiscellaneous.label>
+  <HitechMiscellaneous.description>Enables the construction of various hi-tech techs.</HitechMiscellaneous.description>
+
+  <FusionReactor.label>fusion reactor</FusionReactor.label>
+  <FusionReactor.description>Enables the construction of fusion reactors.</FusionReactor.description>
+
+  <ComputerizedEducation.label>computerized education</ComputerizedEducation.label>
+  <ComputerizedEducation.description>Enables the construction of computers for education your colonists.</ComputerizedEducation.description>
+  
+</LanguageData>
